@@ -20,10 +20,7 @@ function labelAndPholders(inputs) {
     el.innerHTML = item.name.toUpperCase();
     // el.style.fontSize = '12px';
 
-    item.placeholder = item.name
-      .split('')
-      .map((ch, i) => (i === 0 ? ch.toUpperCase() : ch))
-      .join('');
+    item.placeholder = item.name.charAt(0).toUpperCase() + item.name.slice(1);
 
     item.insertAdjacentElement('beforebegin', el);
   }
