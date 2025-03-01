@@ -1,7 +1,6 @@
 'use strict';
 
-const fields = document.querySelectorAll('.field:not(.field--full) > input');
-const fieldsFull = document.querySelectorAll('.field--full > input');
+const fields = document.querySelectorAll('input');
 
 function labelsAndPholders(inputs) {
   for (const item of inputs) {
@@ -18,4 +17,3 @@ function labelsAndPholders(inputs) {
 }
 
 labelsAndPholders(fields);
-labelsAndPholders(fieldsFull);
